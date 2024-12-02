@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- Déclare le type de document comme étant HTML5 -->
+<html lang="fr"> <!-- Indique que le contenu du document est en français -->
+<head>
+  <meta charset="UTF-8"> <!-- Définit l'encodage des caractères en UTF-8 pour gérer correctement les caractères spéciaux comme les accents -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet la mise en page responsive pour les appareils mobiles, s'adapte à la largeur de l'écran -->
+  <title>Contact - Restaurant</title> <!-- Définit le titre de la page qui s'affiche dans l'onglet du navigateur -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Lien vers la feuille de style CSS pour appliquer les styles à la page -->
+</head>
+<body>
+
+  <!-- Section d'en-tête de la page -->
+  <header>
+    <h1>Contactez-Nous</h1> <!-- Titre principal de la page, invitant l'utilisateur à prendre contact -->
+    <p>Nous sommes là pour répondre à vos questions et demandes.</p> <!-- Texte d'introduction pour expliquer l'objectif de la page de contact -->
+  </header>
+
+  <!-- Section principale contenant le formulaire de contact -->
+  <section class="contact-form">
+    <form action="submit_form.php" method="POST"> <!-- Formulaire qui envoie les données au script PHP pour traitement (submit_form.php) -->
+      <label for="nom">Nom :</label> <!-- Label pour le champ "Nom" -->
+      <input type="text" id="nom" name="nom" required> <!-- Champ de texte pour le nom, "required" signifie que le champ est obligatoire -->
+      
+      <label for="prenom">Prénom :</label> <!-- Label pour le champ "Prénom" -->
+      <input type="text" id="prenom" name="prenom" required> <!-- Champ de texte pour le prénom, également requis -->
+      
+      <label for="message">Message :</label> <!-- Label pour le champ "Message" -->
+      <textarea id="message" name="message" required></textarea> <!-- Champ de texte multiligne (textarea) pour le message, requis également -->
+      
+      <button type="submit">Envoyer</button> <!-- Bouton de soumission du formulaire -->
+    </form>
+  </section>
+
+
+  <section id="contact-info">
+    <% contactInfo.info.forEach(h => { %> 
+        <h2>Horaires :</h2>
+        <p><%= h.horaires %></p>
+    <% }) %>  
+</section>
+
+
+
+  <!-- Section contenant les informations de contact supplémentaires -->
+
+    
+ 
+    <p><strong>Numéro de téléphone :</strong> [Votre Numéro]</p> <!-- Affiche le numéro de téléphone du restaurant, à remplacer par le vrai numéro -->
+  </section>
+
+  <!-- Section pied de page avec un lien pour revenir à l'accueil -->
+  <footer>
+    <a href="accueil.ejs" class="cta-button">Retour à l'accueil</a> <!-- Lien pour revenir à la page d'accueil -->
+  </footer>
+
+</body>
+</html>
+

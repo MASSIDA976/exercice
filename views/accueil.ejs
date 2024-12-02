@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- Indique que ce document est un fichier HTML5 -->
+<html lang="fr"> <!-- Spécifie que la langue du contenu est le français -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Définit l'encodage des caractères à UTF-8 pour garantir la compatibilité avec les caractères spéciaux (accents, symboles, etc.) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet à la page de s'adapter automatiquement à la taille de l'écran sur les appareils mobiles -->
+  <title>Restaurant [Nom]</title> <!-- Titre de la page qui apparaît dans l'onglet du navigateur -->
+  <link rel="stylesheet" href="css/style.css"></script><!-- Lien vers le fichier CSS externe qui va appliquer les styles sur la page -->
+</head>
+
+<body>
+
+  <!-- Début de la section d'accueil du restaurant -->
+  <header>
+    <div class="container"> <!-- Un conteneur pour centrer et organiser le contenu dans l'en-tête -->
+      <h1>Bienvenue au Restaurant NDOVOO</h1> <!-- Titre principal de la page, qui accueille les visiteurs -->
+      <section id="accueil">
+        <% utilisateur.nom.forEach(n => { %> 
+            <h3><%= utilisateur.maSalutation + " " + n %></h3>
+        <% }) %>  
+    </section>
+    
+      <p>Découvrez une expérience culinaire unique. Des plats faits maison, avec des ingrédients frais et de saison, qui raviront vos papilles.</p> <!-- Texte introductif qui donne un aperçu du restaurant et de ses offres -->
+
+    </div>
+      <!-- Ajout d'une image représentant le restaurant -->
+      
+      <nav>
+        <ul>
+          <li>
+            <a href="accueil.ejs" target="_blank">accueil</a>
+            <a href="menu.html" target="_blank">menu</a> <!-- Un bouton d'appel à l'action qui redirige l'utilisateur vers la page du menu -->
+            <a href="conatct.html" target="_blank">contact</a>
+            <a href="equipe.html" target="_blank">equipe</a>
+          </li>
+        </ul>
+     </nav>
+ 
+    </div>
+  </header> <!-- Fin de la section d'accueil -->
+
+  <img src="resto.webp" alt="Image du Restaurant" class="restaurant-image" width="100%"> <!-- Image du restaurant qui illustre l'ambiance ou les plats. Assurez-vous que "restaurant-image.jpg" est le bon chemin vers votre fichier image -->
+  
+
+</body>
+</html>

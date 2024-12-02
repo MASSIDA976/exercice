@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Indique que le contenu du document est en français -->
+<head>
+  <meta charset="UTF-8"> <!-- Définit l'encodage des caractères en UTF-8 pour gérer correctement les caractères spéciaux comme les accents -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet à la page de s'adapter aux tailles d'écran des appareils mobiles -->
+  <title>Menu - Restaurant</title> <!-- Définit le titre de la page qui apparaît dans l'onglet du navigateur -->
+  <link rel="stylesheet" href="css/style.css"></script> <!-- Lien vers le fichier CSS pour styliser la page -->
+</head>
+<body>
+
+  <!-- Section d'en-tête du menu -->
+  <header>
+    <h1>Notre Menu</h1> <!-- Titre principal de la page du menu -->
+    <p>Découvrez nos plats savoureux préparés avec soin.</p> <!-- Description de l'expérience culinaire proposée -->
+  </header>
+
+  <section id="menu"></section>
+        <% nosPlats.plats.forEach(p => { %> <!-- Changer nosplats en nosPlats -->
+          <h2><%= p.nom %></h2>
+          <p>Prix: <%= p.prix %></p>
+        <% }) %>  
+</section>
+  
+  <!-- Section pied de page avec un lien vers la page d'accueil -->
+  <footer>
+    <a href="index.html" class="cta-button">Retour à l'accueil</a> <!-- Lien permettant de revenir à la page d'accueil -->
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif; /* Définit la police par défaut à Arial, avec une alternative sans-serif si Arial n'est pas disponible. */
+  margin: 0; /* Supprime les marges par défaut autour du body. */
+  padding: 0; /* Supprime le padding (espacement interne) par défaut autour du body. */
+  background-color: #f4f4f4; /* Applique une couleur de fond gris clair au body pour un look neutre. */
+  color: #333; /* Définit la couleur du texte en gris foncé pour un contraste agréable. */
+}
+
+header {
+  background-color: #333; /* Applique un fond sombre (gris foncé) à l'en-tête. */
+  color: #fff; /* Définit la couleur du texte en blanc pour le contraste avec le fond sombre. */
+  text-align: center; /* Centre le texte horizontalement dans l'en-tête. */
+  padding: 2rem; /* Ajoute un espacement de 2rem autour du contenu dans l'en-tête. */
+}
+
+h1 {
+  margin: 0; /* Supprime la marge par défaut autour du titre h1 pour un alignement précis. */
+}
+
+.cta-button {
+  display: inline-block; /* Affiche le bouton en ligne avec d'autres éléments, mais permet de lui appliquer un padding. */
+  padding: 0.8rem 1.5rem; /* Ajoute du padding de 0.8rem en haut et en bas, et de 1.5rem à gauche et à droite pour un bouton bien dimensionné. */
+  background-color: #28a745; /* Définit la couleur de fond du bouton en vert (couleur de succès). */
+  color: #fff; /* Définit la couleur du texte dans le bouton en blanc pour un bon contraste. */
+  text-decoration: none; /* Supprime le soulignement par défaut des liens. */
+  border-radius: 5px; /* Ajoute des coins arrondis au bouton pour une forme douce et moderne. */
+ margin-top: 1rem; /* Ajoute un espacement au-dessus du bouton pour le séparer du contenu précédent. */
+}
+
+.cta-button:hover {
+  background-color: #218838; /* Change la couleur du fond du bouton en un vert plus foncé lorsqu'on le survole. */
+}
+
+footer {
+  text-align: center; /* Centre le texte horizontalement dans le pied de page. */
+  padding: 1rem; /* Ajoute un espacement de 1rem autour du contenu du pied de page. */
+  background-color: #333; /* Applique un fond sombre au pied de page pour le rendre cohérent avec l'en-tête. */
+  color: #fff; /* Définit la couleur du texte en blanc dans le pied de page. */
+}
+
+/* Menu and Team (Menu et Équipe) */
+.menu, .team {
+  display: flex; /* Utilise Flexbox pour disposer les éléments en ligne ou en colonne. */
+  justify-content: space-around; /* Espace uniformément les éléments dans la section. */
+  flex-wrap: wrap; /* Permet aux éléments de se déplacer sur plusieurs lignes si l'espace est insuffisant. */
+  padding: 2rem; /* Ajoute un espacement de 2rem autour du contenu dans ces sections. */
+}
+
+.dish, .member {
+  width: 250px; /* Définit une largeur fixe de 250px pour chaque élément de plat ou membre. */
+  margin: 1rem; /* Ajoute un espacement de 1rem autour de chaque plat ou membre. */
+  text-align: center; /* Centre le texte à l'intérieur de chaque élément. */
+}
+
+.dish img, .member img {
+  width: 100%; /* Force l'image à occuper toute la largeur de son conteneur. */
+  border-radius: 8px; /* Ajoute des coins arrondis à l'image pour un effet plus doux. */
+}
+
+.dish h3, .member h3 {
+  font-size: 1.2rem; /* Définit la taille de police à 1.2rem pour les titres des plats et des membres. */
+  margin: 0.5rem 0; /* Ajoute un espacement de 0.5rem au-dessus et au-dessous des titres. */
+}
+
+/* Contact Form (Formulaire de contact) */
+.contact-form {
+  background-color: #fff; /* Définit un fond blanc pour la section du formulaire. */
+  padding: 2rem; /* Ajoute un espacement de 2rem autour du formulaire pour le séparer du reste du contenu. */
+  max-width: 600px; /* Définit une largeur maximale de 600px pour que le formulaire ne soit pas trop large. */
+  margin: 2rem auto; /* Centrer le formulaire horizontalement avec un espacement de 2rem au-dessus et en dessous. */
+  border-radius: 8px; /* Ajoute des coins arrondis au formulaire pour un aspect moderne. */
+}
+
+label {
+  font-weight: bold; /* Met les labels des champs en gras pour les distinguer. */
+  margin-top: 1rem; /* Ajoute un espacement de 1rem au-dessus de chaque label pour aérer le formulaire. */
+}
+
+input, textarea {
+  width: 100%; /* Fait en sorte que les champs de texte et les zones de texte occupent toute la largeur disponible. */
+  padding: 0.8rem; /* Ajoute un espacement intérieur de 0.8rem dans les champs de saisie et les zones de texte. */
+  margin-top: 0.3rem; /* Ajoute un léger espacement au-dessus des champs de saisie pour les séparer du texte du label. */
+  border: 1px solid #ccc; /* Ajoute une bordure grise autour des champs de saisie pour les délimiter. */
+  border-radius: 5px; /* Arrondit les coins des champs de saisie pour un aspect plus doux. */
+}
+
+button {
+  background-color: #28a745; /* Applique une couleur de fond verte au bouton pour attirer l'attention. */
+  color: #fff; /* Définit la couleur du texte du bouton en blanc. */
+  padding: 1rem; /* Ajoute un padding intérieur de 1rem pour rendre le bouton plus grand et plus cliquable. */
+  border: none; /* Supprime la bordure par défaut autour du bouton. */
+  border-radius: 5px; /* Ajoute des coins arrondis au bouton pour une forme douce. */
+  width: 100%; /* Fait en sorte que le bouton occupe toute la largeur du formulaire. */
+  margin-top: 1rem; /* Ajoute un espacement de 1rem au-dessus du bouton pour le séparer du champ précédent. */
+}
+
+button:hover {
+  background-color: #218838; /* Change la couleur du fond du bouton en vert plus foncé lorsqu'on le survole. */
+}
+
+/* Contact Information (Informations de contact) */
+.contact-info {
+  padding: 2rem; /* Ajoute un espacement de 2rem autour des informations de contact. */
+  background-color: #fff; /* Applique un fond blanc à cette section pour la distinguer du reste. */
+  max-width: 600px; /* Définit une largeur maximale de 600px pour cette section. */
+  margin: 2rem auto; /* Centre la section horizontalement avec un espacement de 2rem en haut et en bas. */
+  border-radius: 8px; /* Arrondit les coins de la section pour un aspect moderne. */
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(125, 14, 14);
+  text-decoration: none;
+}
